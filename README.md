@@ -9,7 +9,7 @@
 
 Esta avaliação parte das classes e conceitos dos notebooks em sala de aula. Você implementará um novo ambiente derivado do `RandomLake`, resolverá os problemas de observação e recompensa, e discutirá os resultados.
 
-Para esta versão da atividade, considerando as entregas já enviadas, a correção valerá **até 6,0 pontos**, contabilizando as **Seções A, B e C**. Os questionamentos analíticos foram distribuídos dentro dessas próprias seções.
+Para esta versão da atividade, considerando as entregas já enviadas, a correção valerá **até 5,0 pontos**, contabilizando as **Seções A, B e C**. Os questionamentos analíticos foram distribuídos dentro dessas próprias seções.
 
 - Você pode resolver a atividade em **um ou mais notebooks**. Caso use mais de um, organize por seções (A, B e C) e indique claramente no topo de cada notebook o que foi implementado ali.
 - Copie as classes `FrozenPond`, `RandomLake`, `RandomLakeObs`, `MyCallbacks` e `ppo_config_base` dos notebooks de aula para o início do notebook (ou notebooks) de entrega, sem modificações.
@@ -31,7 +31,7 @@ Nos notebooks de aula, o `RandomLake` sorteia os buracos a cada episódio, mas o
 
 ---
 
-## Seção A: Implementação do ambiente *(3,0 pontos)*
+## Seção A: Implementação do ambiente *(2,0 pontos)*
 
 Implemente a classe `MobileLake`, subclasse de `RandomLake`, que realiza as modificações descritas acima. Siga os passos na ordem, cada passo corresponde a uma célula de código no notebook.
 
@@ -49,7 +49,7 @@ Sobrescreva `reward` e `done` para refletir o objetivo móvel. O agente recebe +
 
 Confirme executando manualmente uma sequência de ações que leve o agente ao objetivo no episódio com semente 0.
 
-### A3: Treinamento baseline *(1,5 pontos)*
+### A3: Treinamento baseline *(0,5 pontos)*
 
 Treine um agente PPO no `MobileLake` por **10 iterações** usando `ppo_config_base` com `MyCallbacks`. Registre `goal_reached_mean` a cada iteração.
 
